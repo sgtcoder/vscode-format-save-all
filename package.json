@@ -2,7 +2,7 @@
     "name": "vscode-format-save-all",
     "displayName": "SgtCoder Format-Save All",
     "description": "Opens every file that matches the lookup parameters, and applies the formatting action to them and saves.",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "engines": {
         "vscode": "^1.80.0"
     },
@@ -56,5 +56,5 @@
         "@vscode/test-cli": "^0.0.3"
     },
     "publisher": "sgtcoder",
-    "repository": "https://github.com/sgtcoder/vscode-formatall"
+    "repository": "https://github.com/sgtcoder/vscode-format-save-all"
 }
