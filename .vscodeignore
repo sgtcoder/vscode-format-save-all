@@ -1,7 +1,11 @@
-.vscode/**
-.vscode-test/**
-test/**
-.gitignore
-jsconfig.json
-vsc-extension-quickstart.md
+*.code-workspace
+*.sh
+*.vsix
 .eslintrc.json
+.gitattributes
+.gitignore
+.vscode-test
+/.vscode/sessions.json
+jsconfig.json
+test
+vsc-extension-quickstart.md
