@@ -2,16 +2,12 @@
     "name": "vscode-formatall",
     "displayName": "vscode-formatall",
     "description": "Opens every file that matches the lookup parameters, and applies the formatting action to them.",
-    "version": "0.0.2",
-    "publisher": "ratismal",
+    "version": "1.0.1",
     "engines": {
-        "vscode": "^1.18.0"
+        "vscode": "^1.80.0"
     },
     "categories": [
         "Other"
-    ],
-    "activationEvents": [
-        "onCommand:formatall.doFormat"
     ],
     "main": "./extension",
     "contributes": {
@@ -19,6 +15,10 @@
             {
                 "command": "formatall.doFormat",
                 "title": "Do Format"
+            },
+            {
+                "command": "formatall.doSave",
+                "title": "Do Save"
             }
         ],
         "configuration": {
@@ -27,12 +27,12 @@
             "properties": {
                 "formatall.search.include": {
                     "type": "string",
-                    "default": "**/*.{js,css,vue,html}",
+                    "default": "**/*.{css,html,js,json,jsonc,php,py,sass,scss,sh,vue,xml,yaml}",
                     "description": "The selector to use when finding files to format"
                 },
                 "formatall.search.exclude": {
                     "type": "string",
-                    "default": "**/{node_modules}/**",
+                    "default": "**/{.git,.vagrant,node_modules,storage,vendor}/**",
                     "description": "The selector to use to exclude files/directories from formatting"
                 },
                 "formatall.quantity": {
@@ -47,15 +47,13 @@
         "postinstall": "node ./node_modules/vscode/bin/install",
         "test": "node ./node_modules/vscode/bin/test"
     },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Ratismal/vscode-formatall.git"
-    },
     "devDependencies": {
         "typescript": "^2.6.1",
         "vscode": "^1.1.6",
         "eslint": "^4.6.1",
         "@types/node": "^7.0.43",
         "@types/mocha": "^2.2.42"
-    }
+    },
+    "publisher": "sgtcoder",
+    "repository": "https://github.com/sgtcoder/vscode-formatall"
 }
