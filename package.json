@@ -2,7 +2,7 @@
     "name": "vscode-format-save-all",
     "displayName": "SgtCoder Format-Save All",
     "description": "Opens every file that matches the lookup parameters, and applies the formatting action to them and saves.",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "engines": {
         "vscode": "^1.80.0"
     },
@@ -25,19 +25,19 @@
             "title": "formatall configuration",
             "type": "object",
             "properties": {
-                "formatall.search.include": {
-                    "type": "string",
-                    "default": "**/*.{css,html,js,json,jsonc,php,py,sass,scss,sh,vue,xml,yaml}",
-                    "description": "The selector to use when finding files to format"
-                },
                 "formatall.search.exclude": {
                     "type": "string",
-                    "default": "**/{.git,.vagrant,node_modules,storage,vendor}/**",
+                    "default": "**/{.git,.phpstorm.meta.php,.vagrant,_ide_helper*.php,bootstrap,node_modules,package-lock.json,public,storage,tmp,vendor}",
                     "description": "The selector to use to exclude files/directories from formatting"
+                },
+                "formatall.search.include": {
+                    "type": "string",
+                    "default": "**/*{.css,.html,.js,.json,.jsonc,.php,.py,.sass,.scss,.sh,.vue,.xml,.yaml,artisan}",
+                    "description": "The selector to use when finding files to format"
                 },
                 "formatall.quantity": {
                     "type": "number",
-                    "default": 10,
+                    "default": 20,
                     "description": "The number of files to format before saving and closing, and then moving to the next batch."
                 }
             }
