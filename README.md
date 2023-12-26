@@ -2,6 +2,7 @@
 
 > - **Extension ID:** sgtcoder.vscode-format-save-all
 > - **Last Revised:** 2023-12-26
+
 ____
 
 <br />
