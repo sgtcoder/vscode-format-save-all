@@ -1,10 +1,10 @@
-# VSCode Format Save All Readme #
+# VSCode Format-Save All Readme #
 
 > - **Extension ID:** sgtcoder.vscode-format-save-all
 > - **Last Revised:** 2023-12-26
 
 # Overview #
-> Opens every file that matches the lookup parameters, and applies the formatting action to them and saves.
+> Opens every file that matches the lookup parameters, and applies the formatting action to them and saves.  \
 > File formatting must be set up for all file types that you include.
 
 # Features #
