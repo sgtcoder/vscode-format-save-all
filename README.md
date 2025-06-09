@@ -3,9 +3,15 @@
 > - **Extension ID:** sgtcoder.vscode-format-save-all
 > - **Last Revised:** 2023-12-26
 
+____
+
+<br />
+
 # Overview #
-> Opens every file that matches the lookup parameters, and applies the formatting action to them and saves.  \
+> Opens every file that matches the lookup parameters, and applies the formatting action to them and saves. \
 > File formatting must be set up for all file types that you include.
+
+<br />
 
 # Features #
 > There are currently 2 features `formatall.doFormat` and `formatall.doSave`.
@@ -22,12 +28,16 @@
 1. Looks up files based on configuration options (`formatall.search.include` and `formatall.search.exclude`)
 2. Opens the retrieved files, and performs the `workbench.action.files.save` command on each of them.
 
+<br />
+
 # Extension Settings #
 > This extension contributes the following settings:
 
 - `formatall.search.include`: A selector to choose the files to include in the formatting
 - `formatall.search.exclude`: A selector to choose the files which should not be formatted
 - `formatall.quantity`: How many files should be processed per batch
+
+<br />
 
 # Keyboard Shortcuts #
 > You can define shortcuts to run the actions.
