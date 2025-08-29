@@ -27,11 +27,13 @@ function activate(context) {
                     if (++i % configuration.quantity === 0) {
                         vscode.window.showInformationMessage("Finished a batch. Saving and closing...");
                         await vscode.workspace.saveAll();
+                        await vscode.workspace.saveAll();
                         await vscode.commands.executeCommand("workbench.action.closeAllEditors");
                     }
                 }
             }
             vscode.window.showInformationMessage("Formatting has been complete. Files will be saved and closed...");
+            await vscode.workspace.saveAll();
             await vscode.workspace.saveAll();
             await vscode.commands.executeCommand("workbench.action.closeAllEditors");
             vscode.window.showInformationMessage("Done. " + i + " records have been formatted.");
@@ -65,10 +67,12 @@ function activate(context) {
                 if (++i % configuration.quantity === 0) {
                     vscode.window.showInformationMessage("Finished a batch. Saving and closing...");
                     await vscode.workspace.saveAll();
+                    await vscode.workspace.saveAll();
                     await vscode.commands.executeCommand("workbench.action.closeAllEditors");
                 }
             }
             vscode.window.showInformationMessage("Formatting has been complete. Files will be saved and closed...");
+            await vscode.workspace.saveAll();
             await vscode.workspace.saveAll();
             await vscode.commands.executeCommand("workbench.action.closeAllEditors");
             vscode.window.showInformationMessage("Done. " + i + " records have been formatted.");
