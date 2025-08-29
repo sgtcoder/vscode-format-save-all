@@ -3,7 +3,7 @@
     "displayName": "SgtCoder Format-Save All",
     "description": "Opens every file that matches the lookup parameters, and applies the formatting action to them and saves.",
     "icon": "images/logo.png",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "engines": {
         "vscode": "^1.80.0"
     },
